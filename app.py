@@ -340,7 +340,7 @@ class UploadHandler(tornado.web.RequestHandler):
         values['hash'] = self.payload_id  # provided for backward compatibility
         values['size'] = self.size
         values['service'] = self.service
-        values['b64_identity'] = self.b64_identity
+        # values['b64_identity'] = self.b64_identity
         if self.metadata:
             values['metadata'] = json.loads(self.metadata)
 
